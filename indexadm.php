@@ -23,29 +23,31 @@
 <header id="header"></header>
 
 <body>
-
+        
         <!--opcoes administrador-->
+        <div style="padding-top: 150px;">
         <table class="table">
         <thead>
-            <tr style="font-size:32px">
-            <th scope="col" style="padding-top: 150px;">Produtos</th>
+            <tr class="table-info" style="font-size:32px">
+            <th scope="col">Produtos</th>
             <th scope="col">Clientes</th>
             <th scope="col">Mensagens</th>
             </tr>
         </thead>
         <tbody>
-            <tr>
+            <tr class="table-info">
             <td><button style="width: 250px;font-size:22px" type="button" class="btn btn-primary">Incluir</button></td>
             <td><button style="width: 250px;font-size:22px"  type="button" class="btn btn-primary">Pesquisar</button></td>
             <td><button style="width: 250px;font-size:22px"  type="button" class="btn btn-primary">Pesquisar</button></td>
             </tr>
-            <tr>
+            <tr class="table-info">
             <td><button style="width: 250px;font-size:22px"  type="button" class="btn btn-danger">Excluir</button></td>
             <td></td>
             <td><button style="width: 250px;font-size:22px"  type="button" class="btn btn-danger">Excluir</button></td>
             </tr>
         </tbody>
         </table>
+        </div>
         <!--opcoes administrador-->
        
 
