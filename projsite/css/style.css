@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+	color: white;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.produtoCaixa {
+    height: 200px;
+    width: 200px;
+    border: 15px solid rgb(30, 170, 180);
+    padding: 180px;
+    background-color: black;
+    margin: auto;
+    display: inline;
+}
+.containerCaixa{
+    text-align: center;
+    padding-top: 250px;
+}
+#rodape{
+    margin-top: auto;
+	text-align: center;
+	background-color: rgb(36, 133, 65);
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+#titleFooter {
+	color: white;
+}
+#textFooter {
+	color: white;
+}
+  
