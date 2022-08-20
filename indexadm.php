@@ -24,6 +24,7 @@
 
 <body>
         
+        <!--modal add produto-->
         <div class="modal fade" id="addProd" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -31,17 +32,32 @@
                 <h5 class="modal-title" id="exampleModalLabel" style="color: black">Incluir Produto</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
-                ...
+            <div class="modal-body" style="color: black">
+                <form class="row g-3">
+                    <div class="col-6">
+                        <label for="inputDesc" class="form-label">Descrição</label>
+                        <input type="text" class="form-control" id="inputDesc">
+                    </div>
+                    <div class="col-6">
+                        <label for="inputValor" class="form-label">Valor</label>
+                        <input type="text" class="form-control" id="inputValor">
+                    </div>
+                    <div class="col-12">
+                        <label for="inputFigura" class="form-label">Cod Figura</label>
+                        <input type="text" class="form-control" id="inputFigura">
+                    </div>
+                </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-primary">Adicionar</button>
             </div>
             </div>
         </div>
         </div>
+        <!--modal add produto-->
 
+        <!--modal pesquisar cliente-->
         <div class="modal fade" id="pesqCliente" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -59,7 +75,9 @@
             </div>
         </div>
         </div>
+        <!--modal pesquisar cliente-->
 
+        <!--modal pesquisar mensagem-->
         <div class="modal fade" id="pesqMens" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -77,6 +95,7 @@
             </div>
         </div>
         </div>
+        <!--modal pesquisar mensagem-->
 
         <!--opcoes administrador-->
         <div style="padding-top: 170px;">
