@@ -13,19 +13,6 @@ body {
 	flex-direction: column;
 	min-height: 100%;
 }
-.produtoCaixa {
-    height: 200px;
-    width: 200px;
-    border: 15px solid rgb(30, 170, 180);
-    padding: 180px;
-    background-color: black;
-    margin: auto;
-    display: inline;
-}
-.containerCaixa{
-    text-align: center;
-    padding-top: 250px;
-}
 footer{
     margin-top: auto;
 }

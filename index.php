@@ -24,7 +24,7 @@
 <header id="header"></header>
 
 <body>
-    <div style="padding-top: 50px;margin: auto">
+    <div style="margin: auto">
     <table class="table">
         <thead>
             <tr>

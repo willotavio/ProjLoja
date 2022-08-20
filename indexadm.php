@@ -24,8 +24,62 @@
 
 <body>
         
+        <div class="modal fade" id="addProd" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel" style="color: black">Incluir Produto</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="modal fade" id="pesqCliente" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel" style="color: black">Pesquisar Cliente</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="modal fade" id="pesqMens" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel" style="color: black">Pesquisar Mensagens</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+            </div>
+        </div>
+        </div>
+
         <!--opcoes administrador-->
-        <div style="padding-top: 150px;">
+        <div style="padding-top: 170px;">
         <table class="table">
         <thead>
             <tr class="table-info" style="font-size:32px">
@@ -36,14 +90,34 @@
         </thead>
         <tbody>
             <tr class="table-info">
-            <td><button style="width: 250px;font-size:22px" type="button" class="btn btn-primary">Incluir</button></td>
-            <td><button style="width: 250px;font-size:22px"  type="button" class="btn btn-primary">Pesquisar</button></td>
-            <td><button style="width: 250px;font-size:22px"  type="button" class="btn btn-primary">Pesquisar</button></td>
+            <td>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addProd">
+            Incluir
+            </button>
+            </td>
+            <td>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pesqCliente">
+            Pesquisar
+            </button>
+            </td>
+            <td>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pesqMens">
+            Pesquisar
+            </button>
+            </td>
             </tr>
             <tr class="table-info">
-            <td><button style="width: 250px;font-size:22px"  type="button" class="btn btn-danger">Excluir</button></td>
+            <td>
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Excluir
+            </button>
+            </td>
             <td></td>
-            <td><button style="width: 250px;font-size:22px"  type="button" class="btn btn-danger">Excluir</button></td>
+            <td>
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Incluir
+            </button>
+            </td>
             </tr>
         </tbody>
         </table>
