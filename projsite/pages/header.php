@@ -1,7 +1,7 @@
 <header id="header">
     <nav class="navbar navbar-expand-lg" style="background-color: rgb(30, 170, 180);">
         <div class="container-fluid">
-            <a class="navbar-brand" href=""><img src="../imgs/logo.png" width="60"></a>
+            <a class="navbar-brand" href="index.php"><img src="projsite/imgs/logo.png" width="60px"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -16,7 +16,7 @@
                         <a class="nav-link" href="" style="color:white">FALE CONOSCO</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../../indexadm.php" style="color:white">GERENCIAR</a>
+                        <a class="nav-link" href="indexadm.php" style="color:white">GERENCIAR</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button"

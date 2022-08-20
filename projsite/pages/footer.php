@@ -1,6 +1,6 @@
-<footer id='rodape'>
-    <div class="container-fluid">
-        <h2 id='titleFooter'>LOJA INSANA</h2>
-        <p id='textFooter'>2022</p>
+<footer>
+    <div id='rodape'>
+        <h1>LOJA INSANA</h1>
+        <p>2022</p>
     </div>
 </footer>

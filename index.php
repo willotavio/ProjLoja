@@ -24,10 +24,6 @@
 <header id="header"></header>
 
 <body>
-    
-    <form action="indexadm.php">
-        <input type="submit" value="Gerenciar">
-    </form>
 
     <div class="containerCaixa">
     <p>
@@ -43,10 +39,11 @@
 
     <script>
     $(function() {
-        $("#rodape").load("projsite/pages/footer.php");
+        $("footer").load("projsite/pages/footer.php");
     });
     </script>
-    <footer id="rodape"></footer>
+
+    <footer id="footer"></footer>
 
 </body>
 </html>
