@@ -15,8 +15,10 @@ body {
 }
 footer{
     margin-top: auto;
+    padding: 0px;
 }
 #rodape{
     background-color: rgb(30, 170, 180);
+    padding: 0px;
 }
 
