@@ -37,6 +37,17 @@
     <table class="table">
         <thead>
             <tr>
+                <div class="card text-center" style="width: 78rem;">
+                    <div class="card-header">
+                    </div>
+                    <img src="projsite/imgs/banner.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <a href="#" class="btn btn-primary">Ver ofertas</a>
+                    </div>
+                </div>
+            </tr>
+
+            <tr>
             <th scope="col">
                 <div class="card" style="width: 18rem;">
                 <img src="projsite/imgs/prod/1.jpg" class="card-img-top" alt="...">

@@ -24,7 +24,7 @@
         <h1>LOGIN</h1>
         <form action="../indexadm.php" style="margin-top: 30px; padding: 10px">
         <div class="col mb-3">
-            <label for="inputUserEmail3" class="col-sm-2 col-form-label">Usuário</label>
+            <label for="inputUser" class="col-sm-2 col-form-label">Usuário</label>
             <div class="col">
             <input type="text" class="form-control" id="inputUser">
             </div>
