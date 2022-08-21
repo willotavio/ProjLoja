@@ -16,7 +16,7 @@
                         <a class="nav-link" href="" style="color:white">FALE CONOSCO</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="indexadm.php" style="color:white">GERENCIAR</a>
+                        <a class="nav-link" href="projadm/login.php" style="color:white">GERENCIAR</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button"
