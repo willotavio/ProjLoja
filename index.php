@@ -37,7 +37,7 @@
     <table class="table">
         <thead>
             <tr>
-                <div class="card text-center" style="width: 78rem;">
+                <div class="card text-center" style="width: 78rem; margin: auto">
                     <div class="card-header">
                     </div>
                     <img src="projsite/imgs/banner.jpg" class="card-img-top" alt="...">
@@ -46,7 +46,12 @@
                     </div>
                 </div>
             </tr>
-
+        </thead>
+    </table>
+    </div>
+    <div style="margin: auto">
+    <table class="table">
+        <thead>
             <tr>
             <th scope="col">
                 <div class="card" style="width: 18rem;">
@@ -58,7 +63,8 @@
                 </div>
                 </div>
             </th>
-            <th scope="col"><div class="card" style="width: 18rem;">
+            <th scope="col">
+                <div class="card" style="width: 18rem;">
                 <img src="projsite/imgs/prod/1.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
@@ -67,7 +73,8 @@
                 </div>
                 </div>
             </th>
-            <th scope="col"><div class="card" style="width: 18rem;">
+            <th scope="col">
+                <div class="card" style="width: 18rem;">
                 <img src="projsite/imgs/prod/1.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
