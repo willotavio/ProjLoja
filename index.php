@@ -40,9 +40,9 @@
                 <div class="card text-center" style="width: 78rem; margin: auto">
                     <div class="card-header">
                     </div>
-                    <img src="projsite/imgs/banner.jpg" class="card-img-top" alt="...">
+                    <img src="projsite/imgs/banner.jpg" class="card-img-top" alt="banner" title="banner">
                     <div class="card-body">
-                        <a href="#" class="btn btn-primary">Ver ofertas</a>
+                        <a href="#" class="btn btn-info text-white">Ver ofertas</a>
                     </div>
                 </div>
             </tr>
@@ -55,31 +55,31 @@
             <tr>
             <th scope="col">
                 <div class="card" style="width: 18rem;">
-                <img src="projsite/imgs/prod/1.jpg" class="card-img-top" alt="...">
+                <img src="projsite/imgs/prod/1.jpg" class="card-img-top" alt="produto 1" title="produto 1">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Comprar</a>
+                    <a href="#" class="btn btn-info text-white">Comprar</a>
                 </div>
                 </div>
             </th>
             <th scope="col">
                 <div class="card" style="width: 18rem;">
-                <img src="projsite/imgs/prod/1.jpg" class="card-img-top" alt="...">
+                <img src="projsite/imgs/prod/1.jpg" class="card-img-top" alt="produto 2" title="produto 2">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Comprar</a>
+                    <a href="#" class="btn btn-info text-white">Comprar</a>
                 </div>
                 </div>
             </th>
             <th scope="col">
                 <div class="card" style="width: 18rem;">
-                <img src="projsite/imgs/prod/1.jpg" class="card-img-top" alt="...">
+                <img src="projsite/imgs/prod/1.jpg" class="card-img-top" alt="produto 3" title="produto 3">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Comprar</a>
+                    <a href="#" class="btn btn-info text-white">Comprar</a>
                 </div>
                 </div>
             </th>
