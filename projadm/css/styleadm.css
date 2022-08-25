@@ -52,8 +52,6 @@ footer{
     color: white;
     font-size: 52px;
 }
-/*login*/
-
 #bodyLogin div{
     color: rgb(40, 90, 100);
 }
@@ -69,3 +67,13 @@ a{
 a:hover{
     color: rgb(50, 110, 150);
 }
+/*login*/
+
+/*gerenciamento*/
+th{
+    color: white;
+}
+tr{
+    background-color: rgb(55, 115, 128);
+}
+/*gerenciamento*/

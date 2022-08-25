@@ -124,14 +124,14 @@
         <div style="padding-top: 170px;">
         <table class="table">
         <thead>
-            <tr class="table-info" style="font-size:32px">
+            <tr class="table" style="font-size:32px">
             <th scope="col">Produtos</th>
             <th scope="col">Clientes</th>
             <th scope="col">Mensagens</th>
             </tr>
         </thead>
         <tbody>
-            <tr class="table-info">
+            <tr class="table">
             <td>
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addProd">
             Incluir
@@ -148,7 +148,7 @@
             </button>
             </td>
             </tr>
-            <tr class="table-info">
+            <tr class="table">
             <td>
             <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
             Excluir

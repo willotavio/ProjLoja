@@ -56,7 +56,6 @@
             </div>
             </div>
         
-        <th scope="col">
         <div class="col sm-4">
             <div class="card" style="width: 18rem;margin: auto">
             <img src="projsite/imgs/prod/1.jpg" class="card-img-top" alt="produto 2" title="produto 2">
@@ -68,7 +67,6 @@
             </div>
             </div>
         
-        <th scope="col">
         <div class="col sm-4">
             <div class="card" style="width: 18rem;margin: auto">
             <img src="projsite/imgs/prod/1.jpg" class="card-img-top" alt="produto 3" title="produto 3">
