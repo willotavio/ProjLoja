@@ -1,5 +1,5 @@
 <header id="header" style="margin-bottom: 100px;">
-    <nav class="navbar navbar-expand-lg" style="background-color: rgb(30, 170, 180);position: fixed;z-index: 1000;width: 100%;">
+    <nav class="navbar navbar-expand-lg" style="position: fixed;z-index: 1000;width: 100%;">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.php"><img src="projsite/imgs/logo.png" width="60px"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -24,7 +24,7 @@
                             CONTA
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown"
-                            style=" background-color: rgb(30, 170, 180);">
+                            style=" background-color: rgb(40, 90, 100);">
                             <li><a class="dropdown-item" href="" style="color:white">VER PERFIL</a>
                             </li>
                             <li>

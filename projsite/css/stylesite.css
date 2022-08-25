@@ -20,7 +20,7 @@ footer{
     padding: 0px;
 }
 #rodape{
-    background-color: rgb(30, 170, 180);
+    background-color: rgb(40, 90, 100);
     padding: 0px;
 }
 /*rodape*/
@@ -30,3 +30,9 @@ footer{
     transform: translateX(-20px);
 }
 /*login*/
+
+/*index*/
+nav{
+    background-color: rgb(40, 90, 100);
+}
+/*index*/

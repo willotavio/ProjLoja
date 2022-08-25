@@ -21,16 +21,23 @@ a{
 a:hover{
     color: rgba(255, 255, 255, 0.822);
 }
-/*rodape*/
+
+/*header*/
+nav{
+    background-color: rgb(40, 90, 100);
+}
+/*header*/
+
+/*footer*/
 footer{
     margin-top: auto;
     padding: 0px;
 }
 #rodape{
-    background-color: rgb(30, 170, 180);
+    background-color: rgb(40, 90, 100);
     padding: 0px;
 }
-/*rodape*/
+/*footer*/
 
 /*login*/
 #divLogin{
@@ -46,3 +53,19 @@ footer{
     font-size: 52px;
 }
 /*login*/
+
+#bodyLogin div{
+    color: rgb(40, 90, 100);
+}
+#bodyLogin h1{
+    color: rgb(40, 90, 100);
+}
+button{
+    background-color: rgb(40, 90, 100);
+}
+a{
+    color: rgb(40, 90, 100);
+}
+a:hover{
+    color: rgb(50, 110, 150);
+}

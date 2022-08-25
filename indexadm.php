@@ -23,7 +23,7 @@
     </script>
     <!--importando header por js-->
 
-    <link rel="stylesheet" href="projsite/css/style.css">
+    <link rel="stylesheet" href="projadm/css/styleadm.css">
 
 </head>
 
