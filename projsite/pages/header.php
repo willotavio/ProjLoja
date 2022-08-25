@@ -25,7 +25,7 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown"
                             style=" background-color: rgb(40, 90, 100);">
-                            <li><a class="dropdown-item" href="" style="color:white">VER PERFIL</a>
+                            <li><a class="dropdown-item" href="projadm/perfil.php" style="color:white">VER PERFIL</a>
                             </li>
                             <li>
                                 <hr class="dropdown-divider">
