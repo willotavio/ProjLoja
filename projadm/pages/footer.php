@@ -1,3 +1,5 @@
+<?php
+?>
 <footer>
     <div id='rodape'>
         <h1>LOJA INSANA</h1>
