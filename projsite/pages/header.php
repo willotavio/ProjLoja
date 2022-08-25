@@ -13,7 +13,7 @@
                         <a class="nav-link " href="" style="color:white">CADASTRO</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="" style="color:white">FALE CONOSCO</a>
+                        <a class="nav-link" href="projsite/pages/faleconosco.php" style="color:white">FALE CONOSCO</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="projadm/login.php" style="color:white">GERENCIAR</a>
