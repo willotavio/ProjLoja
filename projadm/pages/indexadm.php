@@ -18,16 +18,16 @@
     <!--importando header por js-->
     <script>
     $(function() {
-        $("#header").load("projsite/pages/header.php");
+        $("#header1").load("header.php");
     });
     </script>
     <!--importando header por js-->
 
-    <link rel="stylesheet" href="projadm/css/styleadm.css">
+    <link rel="stylesheet" href="../css/styleadm.css">
 
 </head>
 
-<header id="header"></header>
+<header id="header1"></header>
 
 <body>
         
@@ -174,11 +174,11 @@
 
     <script>
     $(function() {
-        $("footer").load("projsite/pages/footer.php");
+        $("footer1").load("footer.php");
     });
     </script>
 
-    <footer id="footer"></footer>
+    <footer id="footer1"></footer>
 
 </body>
 </html>

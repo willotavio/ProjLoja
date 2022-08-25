@@ -15,14 +15,14 @@
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!--bootstrap-->
 
-        <link rel="stylesheet" href="css/styleadm.css">
+        <link rel="stylesheet" href="projadm/css/styleadm.css">
 
 </head>
 <body id="bodyLogin" class="bg-light" style="--bs-bg-opacity: .1;">
 
     <div id="divLogin" class="shadow-lg p-3 bg-white rounded">
         <h1 class="text" id="titleLogin">LOGIN</h1>
-        <form action="../indexadm.php" style="padding: 10px">
+        <form action="indexadm.php" style="padding: 10px">
         <div class="col mb-3">
             <label class="text" for="inputUser" class="col-sm-2 col-form-label">Usuário</label>
             <div class="col">
