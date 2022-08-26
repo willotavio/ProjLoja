@@ -17,7 +17,7 @@
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!--bootstrap-->
 
-        <link rel="stylesheet" href="projadm/css/styleadm.css">
+        <link rel="stylesheet" href="../css/styleadm.css">
 
 </head>
 <body id="bodyLogin" class="bg-light" style="--bs-bg-opacity: .1;">

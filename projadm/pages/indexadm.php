@@ -17,19 +17,81 @@
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!--bootstrap-->
         
-    <!--importando header por js-->
-    <script>
-    $(function() {
-        $("#header1").load("header.php");
-    });
-    </script>
-    <!--importando header por js-->
+    
 
     <link rel="stylesheet" href="../css/styleadm.css">
 
 </head>
 
-<header id="header1"></header>
+<!--navbar-->
+<header id="header" style="margin-bottom: 100px;">
+    <nav class="navbar navbar-expand-lg" style="position: fixed;z-index: 1000;width: 100%;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href=""><img src="../imgs/logo.png" width="60px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " href="" style="color:white">VOLTAR AO SITE</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" style="color:white">
+                            PRODUTOS
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown"
+                            style=" background-color: rgb(40, 90, 100);">
+                            <li><a class="dropdown-item" href="projadm/pages/perfil.php" style="color:white">VER PERFIL</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="" style="color:white">SAIR</a>
+                            </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" style="color:white">
+                            CLIENTES
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown"
+                            style=" background-color: rgb(40, 90, 100);">
+                            <li><a class="dropdown-item" href="projadm/pages/perfil.php" style="color:white">VER PERFIL</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="" style="color:white">SAIR</a>
+                            </li>
+                            </ul>
+                        </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" style="color:white">
+                            MENSAGENS
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown"
+                            style=" background-color: rgb(40, 90, 100);">
+                            <li><a class="dropdown-item" href="projadm/pages/perfil.php" style="color:white">VER PERFIL</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="" style="color:white">SAIR</a>
+                            </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--navbar-->
 
 <body>
         
@@ -174,13 +236,12 @@
     </script>
     <!--bootstrap-->
 
-    <script>
-    $(function() {
-        $("footer1").load("footer.php");
-    });
-    </script>
-
-    <footer id="footer1"></footer>
+    <footer>
+    <div id='rodape'>
+        <h1>LOJA INSANA</h1>
+        <p style="margin: 0px">2022</p>
+    </div>
+    </footer>
 
 </body>
 </html>

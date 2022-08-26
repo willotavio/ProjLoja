@@ -32,7 +32,7 @@
     <!-- <header id="header"></header> -->
 
     <!--navbar-->
-    <header id="header" style="margin-bottom: 100px;">
+<header id="header" style="margin-bottom: 100px;">
     <nav class="navbar navbar-expand-lg" style="position: fixed;z-index: 1000;width: 100%;">
         <div class="container-fluid">
             <a class="navbar-brand" href=""><img src="projsite/imgs/logo.png" width="60px"></a>
