@@ -3,7 +3,7 @@ USE loja;
 CREATE TABLE produto(
 codProd INT PRIMARY KEY AUTO_INCREMENT,
 descProd VARCHAR(90) NOT NULL,
-valor DECIMAL(5,2) NOT NULL,
+valorProd DECIMAL(5,2) NOT NULL,
 figura blob NOT NULL
 );
 CREATE TABLE cliente(

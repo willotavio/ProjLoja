@@ -104,7 +104,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body" style="color: black">
-                <form class="row g-3">
+                <form action="../gerenciamento/crud\/produto/controleproduto.php" method="GET" class="row g-3">
                     <div class="col-6">
                         <label for="inputDesc" class="form-label">Descrição</label>
                         <input type="text" class="form-control" id="inputDesc">
@@ -121,7 +121,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                <button type="button" class="btn btn-primary">Adicionar</button>
+                <button type="submit" class="btn btn-primary" name='botao' value='add'>Adicionar</button>
             </div>
             </div>
         </div>
