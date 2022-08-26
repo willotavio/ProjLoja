@@ -78,12 +78,10 @@
 <body>
     <div class="container text-dark" style="margin-top:25px">
     <div class="card text-center" style="width: 78rem; margin: auto">
-        <div class="card-header">
-        </div>
-        <img src="projsite/imgs/banner.jpg" class="card-img-top" alt="banner" title="banner">
-        <div class="card-body">
-            <a href="#" class="btn btn-info text-white">Ver ofertas</a>
-        </div>
+        <img src="projsite/imgs/banner.png" class="card-img-top" alt="banner" title="banner">
+        
+            <a href="#" class="btn btn-info text-white" style="width: 150px; margin: auto; position: absolute;transform: translate(550px,350px)">Ver ofertas</a>
+        
     </div>
 </div>
     <div class="container text-dark" style="margin-top:25px">
