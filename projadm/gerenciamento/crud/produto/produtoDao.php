@@ -28,23 +28,26 @@ class produtoDao{
     }
 
     public function atualizarProd(Produto $p){
-        $sql = 'update produto set codProd=?, descProd=?, valorProd=?, figuraProd=?';
+        $sql = 'update produto set descProd=?, valorProd=?, figuraProd=? where codProd=?';
 
         $banco = new conexao();
         $con = $banco->getConexao();
         $res = $con->prepare($sql);
-        $res->bindValue(1,$p->getCodProd());
-        $res->bindValue(2,$p->getDescProd());
-        $res->bindValue(3,$p->getValorProd());
-        $res->bindValue(4,$p->getFiguraProd());
+        $res->bindValue(4,$p->getCodProd());
+        $res->bindValue(1,$p->getDescProd());
+        $res->bindValue(2,$p->getValorProd());
+        $res->bindValue(3,$p->getFiguraProd());
 
         $final = $res->execute();
 
         if($final){
             echo "<script LANGUAGE='JavaScript'>
             window.alert('Alterado com sucesso!');
-            window.location.href='../index.php'
+            window.location.href='../../../pages/indexadm.php'
             </script>";
+        }
+        else{
+            echo "deu ruim";
         }
     }
 

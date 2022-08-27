@@ -198,6 +198,44 @@
         </div>
         <!--modal pesquisar produto-->
 
+        <!--modal alterar produto-->
+        <div class="modal fade" id="alterarProd" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel" style="color: black">Alterar Produtos</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" style="color: black">
+            <form action="../gerenciamento/crud/produto/controleproduto.php" method="GET" class="row g-3">
+                    <div class="col-6">
+                        <label for="codProd" class="form-label">Cod</label>
+                        <input type="text" class="form-control" id="codProd" name="codProd">
+                    </div>
+                    <div class="col-6">
+                        <label for="descProd" class="form-label">Descrição</label>
+                        <input type="text" class="form-control" id="descProd" name="descProd">
+                    </div>
+                    <div class="col-6">
+                        <label for="valorProd" class="form-label">Valor</label>
+                        <input type="text" class="form-control" id="valorProd" name="valorProd">
+                    </div>
+                    <div class="col-12">
+                        <label for="figuraProd" class="form-label">Cod Figura</label>
+                        <input type="text" class="form-control" id="figuraProd" name="figuraProd">
+                    </div>
+                </div>
+                
+                <button type="submit" class="btn btn-primary" name='botao' value='alterar'>Alterar</button>
+                </form>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            </div>
+            </div>
+        </div>
+        </div>
+        <!--modal alterar produto-->
+
         <!--modal pesquisar cliente-->
         <div class="modal fade" id="pesqCliente" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -301,6 +339,14 @@
             Pesquisar
             </button>
             </td>
+            </tr>
+            <tr>
+            <td>
+            <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#alterarProd">
+            Alterar
+            </button>
+            </td>
+            </tr>
         </tbody>
         </table>
         </div>
