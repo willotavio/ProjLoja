@@ -133,6 +133,31 @@
         </div>
         <!--modal add produto-->
 
+        <!--modal delete produto-->
+        <div class="modal fade" id="deleteProd" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel" style="color: black">Excluir Produto</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" style="color: black">
+                <form action="../gerenciamento/crud/produto/controleproduto.php" method="GET" class="row g-3">
+                    <div class="col-6">
+                        <label for="codProd" class="form-label">Cod</label>
+                        <input type="text" class="form-control" id="codProd" name="codProd">
+                    </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                <button type="submit" class="btn btn-danger" name='botao' value='deletar'>Deletar</button>
+            </div>
+            </form>
+            </div>
+        </div>
+        </div>
+        <!--modal delete produto-->
+
         <!--modal pesquisar cliente-->
         <div class="modal fade" id="pesqCliente" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -219,7 +244,7 @@
             </tr>
             <tr class="table">
             <td>
-            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteProd">
             Excluir
             </button>
             </td>

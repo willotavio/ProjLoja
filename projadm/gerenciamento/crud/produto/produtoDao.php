@@ -61,7 +61,7 @@ class produtoDao{
         if($final){
             echo "<script LANGUAGE='JavaScript'>
             window.alert('Deletado com sucesso!');
-            window.location.href='../index.php'
+            window.location.href='../../../pages/indexadm.php'
             </script>";
             }
 }
