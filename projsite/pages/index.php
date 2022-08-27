@@ -47,7 +47,7 @@
                         <a class="nav-link " href="" style="color:white">CADASTRO</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="projsite/pages/faleconosco.php" style="color:white">FALE CONOSCO</a>
+                        <a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#faleConosco" style="color:white">FALE CONOSCO</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="projadm/pages/login.php" style="color:white">GERENCIAR</a>
@@ -76,6 +76,45 @@
     <!--navbar-->
 
 <body>
+
+    <!--modal fale conosco-->
+    <div class="modal fade" id="faleConosco" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel" style="color: black">Fale Conosco</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" style="color: black">
+                <form action="" method="GET" class="row g-3">
+                    <div class="col-6">
+                        <label for="codMensagem" class="form-label">Cod Mensagem</label>
+                        <input type="number" class="form-control" id="codMensagem" name="codMensagem">
+                    </div>
+                    <div class="col-6">
+                        <label for="assunto" class="form-label">Assunto</label>
+                        <input type="text" class="form-control" id="assunto" name="assunto">
+                    </div>
+                    <div class="col-6">
+                        <label for="observação" class="form-label">Observação</label>
+                        <input type="text" class="form-control" id="observação" name="observação">
+                    </div>
+                    <div class="col-6">
+                        <label for="data" class="form-label">Data</label>
+                        <input type="date" class="form-control" id="data" name="data">
+                    </div>
+                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                <button type="submit" class="btn btn-primary" name='botao' value='add'>Adicionar</button>
+            </div>
+            </form>
+            </div>
+        </div>
+        </div>
+        <!--modal fale conosco-->
+
     <div class="container text-dark" style="margin-top:25px">
     <div class="card text-center" style="width: 78rem; margin: auto">
         <img src="projsite/imgs/banner.png" class="card-img-top" alt="banner" title="banner">
