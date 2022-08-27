@@ -90,266 +90,280 @@
 
 <body>
         
-        <!--modal add produto-->
-        <div class="modal fade" id="addProd" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel" style="color: black">Incluir Produto</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<!--modal add produto-->
+<div class="modal fade" id="addProd" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+    <div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: black">Incluir Produto</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body" style="color: black">
+        <form action="../gerenciamento/crud/produto/controleproduto.php" method="GET" class="row g-3">
+            <div class="col-md-6">
+                <label for="codProd" class="form-label">Cod</label>
+                <input type="text" class="form-control" id="codProd" name="codProd">
             </div>
-            <div class="modal-body" style="color: black">
-                <form action="../gerenciamento/crud/produto/controleproduto.php" method="GET" class="row g-3">
-                    <div class="col-md-6">
-                        <label for="codProd" class="form-label">Cod</label>
-                        <input type="text" class="form-control" id="codProd" name="codProd">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="descProd" class="form-label">Descrição</label>
-                        <input type="text" class="form-control" id="descProd" name="descProd">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="valorProd" class="form-label">Valor</label>
-                        <input type="text" class="form-control" id="valorProd" name="valorProd">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="figuraProd" class="form-label">Cod Figura</label>
-                        <input type="text" class="form-control" id="figuraProd" name="figuraProd">
-                    </div>
-                
+            <div class="col-md-6">
+                <label for="descProd" class="form-label">Descrição</label>
+                <input type="text" class="form-control" id="descProd" name="descProd">
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Fechar</button>
-                <button type="submit" class="btn btn-outline-primary" name='botao' value='add'>Adicionar</button>
+            <div class="col-md-6">
+                <label for="valorProd" class="form-label">Valor</label>
+                <input type="text" class="form-control" id="valorProd" name="valorProd">
             </div>
-            </form>
+            <div class="col-md-6">
+                <label for="figuraProd" class="form-label">Cod Figura</label>
+                <input type="text" class="form-control" id="figuraProd" name="figuraProd">
             </div>
-        </div>
-        </div>
-        <!--modal add produto-->
-
-        <!--modal delete produto-->
-        <div class="modal fade" id="deleteProd" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel" style="color: black">Excluir Produto</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body" style="color: black">
-                <form action="../gerenciamento/crud/produto/controleproduto.php" method="GET" class="row g-3">
-                    <div class="col">
-                        <label for="codProd" class="form-label">Cod</label>
-                        <input type="text" class="form-control" id="codProd" name="codProd">
-                    </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Fechar</button>
-                <button type="submit" class="btn btn-outline-danger" name='botao' value='deletar'>Deletar</button>
-            </div>
-            </form>
-            </div>
-        </div>
-        </div>
-        <!--modal delete produto-->
-
-        <!--modal pesquisar produto-->
-        <div class="modal fade" id="pesqProd" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel" style="color: black">Pesquisar Produtos</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body" style="color: black">
-            <form class="row g-3">
-                    <div class="col-12">
-                        <label for="inputDesc" class="form-label">Código do Produto</label>
-                        <input type="text" class="form-control" id="inputDesc">
-                    </div>
-                    <div class="col">
-                    <button type="submit" class="btn btn-outline-primary" data-bs-dismiss="modal">Pesquisar</button>
-                    </div>
-            </div>
-            </form>
-
-            <div style="color: black"><?php
-            include ("../gerenciamento/connection/conexao.php");
-            $sql= "SELECT * FROM produto";
-                    $banco = new conexao();
-                    $con = $banco->getConexao();
-                    $res_prod = $con->query($sql);
-                    while($row = $res_prod->fetch()){
-                        echo "<tr>";
-                        echo "<td style='text-align:center;'>Código: ".$row['codProd']."</td><br>";
-                        echo "<td style='text-align:center'>Descrição: ".$row['descProd']."</td><br>";
-                        echo "<td style='text-align:center'>Valor: ".$row['valorProd']."</td><br>";
-                        echo "<td style='text-align:center'>Figura: ".$row['figuraProd']."</td><br>";
-                        
-                        echo "</tr> <hr>";
-                    }
-                    ?></div>
-
-            <div class="modal-footer">
-                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Fechar</button>
-            </div>
-            </div>
-        </div>
-        </div>
-        <!--modal pesquisar produto-->
-
-        <!--modal alterar produto-->
-        <div class="modal fade" id="alterarProd" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel" style="color: black">Alterar Produtos</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body" style="color: black">
-            <form action="../gerenciamento/crud/produto/controleproduto.php" method="GET" class="row g-3">
-                    <div class="col-6">
-                        <label for="codProd" class="form-label">Cod</label>
-                        <input type="text" class="form-control" id="codProd" name="codProd">
-                    </div>
-                    <div class="col-6">
-                        <label for="descProd" class="form-label">Descrição</label>
-                        <input type="text" class="form-control" id="descProd" name="descProd">
-                    </div>
-                    <div class="col-6">
-                        <label for="valorProd" class="form-label">Valor</label>
-                        <input type="text" class="form-control" id="valorProd" name="valorProd">
-                    </div>
-                    <div class="col-12">
-                        <label for="figuraProd" class="form-label">Cod Figura</label>
-                        <input type="text" class="form-control" id="figuraProd" name="figuraProd">
-                    </div>
-                </div>
-                <div class="col">
-                <button type="submit" class="btn btn-outline-primary" name='botao' value='alterar'>Alterar</button>
-                </div>
-                </form>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Fechar</button>
-            </div>
-            </div>
-        </div>
-        </div>
-        <!--modal alterar produto-->
-
-        <!--modal pesquisar cliente-->
-        <div class="modal fade" id="pesqCliente" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel" style="color: black">Pesquisar Cliente</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body" style="color: black">
-            <form class="row g-3">
-                    <div class="col-12">
-                        <label for="inputDesc" class="form-label">Nome do Cliente</label>
-                        <input type="text" class="form-control" id="inputDesc">
-                    </div>
-                    <div class="col">
-                    <button type="submit" class="btn btn-outline-primary" data-bs-dismiss="modal">Pesquisar</button>
-                    </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Fechar</button>
-            </div>
-            </form>
-            </div>
-        </div>
-        </div>
-        <!--modal pesquisar cliente-->
-
-        <!--modal pesquisar mensagem-->
-        <div class="modal fade" id="pesqMens" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel" style="color: black">Pesquisar Mensagens</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-            <div class="modal-body" style="color: black">
-            <form class="row g-3">
-                    <div class="col-12">
-                        <label for="inputDesc" class="form-label">Código da Mensagem</label>
-                        <input type="text" class="form-control" id="inputDesc">
-                    </div>
-                    <div class="col">
-                    <button type="submit" class="btn btn-outline-primary" data-bs-dismiss="modal">Pesquisar</button>
-                    </div>
-            </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Fechar</button>
-            </div>
-            </form>
-            </div>
-        </div>
-        </div>
-        <!--modal pesquisar mensagem-->
-
-        <!--opcoes administrador-->
-        <div style="margin-top: 150px;" class="shadow-lg rounded">
-        <table class="table">
-        <thead>
-            <tr class="table" style="font-size:32px">
-            <th scope="col"><img src="../imgs/iconspage/iconprodutos.png" alt="produtos"></th>
-            <th scope="col"><img src="../imgs/iconspage/iconperson.png" alt="clientes"></th>
-            <th scope="col"><img src="../imgs/iconspage/iconmensagem.png" alt="mensagens"></th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr class="table">
-            <td>
-            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#addProd">
-            Incluir
-            </button>
-            <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#deleteProd">
-            Excluir
-            </button>
-            
-            </td>
-
-            <td>
-            <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#pesqCliente">
-            Pesquisar
-            </button>
-            </td>
-            
-            <td>
-            <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#pesqMens">
-            Pesquisar
-            </button>
-            <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Excluir
-            </button>
-            </td>
-            </tr>
-
-            <tr class="table">
-                <td>
-                <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#pesqProd">
-            Pesquisar
-            </button>
-            <button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#alterarProd">
-            Alterar
-            </button>
-                </td>
-                <td></td>
-                <td></td>
-            </tr>
-        </tbody>
-        </table>
-        </div>
-        <!--opcoes administrador-->
-
         
-       
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Fechar</button>
+        <button type="submit" class="btn btn-outline-primary" name='botao' value='add'>Adicionar</button>
+    </div>
+    </form>
+    </div>
+</div>
+</div>
+<!--modal add produto-->
+<!--modal delete produto-->
+<div class="modal fade" id="deleteProd" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+    <div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: black">Excluir Produto</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body" style="color: black">
+        <form action="../gerenciamento/crud/produto/controleproduto.php" method="GET" class="row g-3">
+            <div class="col">
+                <label for="codProd" class="form-label">Cod</label>
+                <input type="text" class="form-control" id="codProd" name="codProd">
+            </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Fechar</button>
+        <button type="submit" class="btn btn-outline-danger" name='botao' value='deletar'>Deletar</button>
+    </div>
+    </form>
+    </div>
+</div>
+</div>
+<!--modal delete produto-->
+<!--modal pesquisar produto-->
+<div class="modal fade" id="pesqProd" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+    <div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: black">Pesquisar Produtos</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body" style="color: black">
+    <form class="row g-3">
+            <div class="col-12">
+                <label for="inputDesc" class="form-label">Código do Produto</label>
+                <input type="text" class="form-control" id="inputDesc">
+            </div>
+            <div class="col">
+            <button type="submit" class="btn btn-outline-primary" data-bs-dismiss="modal">Pesquisar</button>
+            </div>
+    </div>
+    </form>
+    <div style="color: black"><?php
+    include ("../gerenciamento/connection/conexao.php");
+    $sql= "SELECT * FROM produto";
+            $banco = new conexao();
+            $con = $banco->getConexao();
+            $res_prod = $con->query($sql);
+            while($row = $res_prod->fetch()){
+                echo "<tr>";
+                echo "<td style='text-align:center;'>Código: ".$row['codProd']."</td><br>";
+                echo "<td style='text-align:center'>Descrição: ".$row['descProd']."</td><br>";
+                echo "<td style='text-align:center'>Valor: ".$row['valorProd']."</td><br>";
+                echo "<td style='text-align:center'>Figura: ".$row['figuraProd']."</td><br>";
+                
+                echo "</tr> <hr>";
+            }
+            ?></div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Fechar</button>
+    </div>
+    </div>
+</div>
+</div>
+<!--modal pesquisar produto-->
+<!--modal alterar produto-->
+<div class="modal fade" id="alterarProd" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+    <div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: black">Alterar Produtos</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body" style="color: black">
+    <form action="../gerenciamento/crud/produto/controleproduto.php" method="GET" class="row g-3">
+            <div class="col-6">
+                <label for="codProd" class="form-label">Cod</label>
+                <input type="text" class="form-control" id="codProd" name="codProd">
+            </div>
+            <div class="col-6">
+                <label for="descProd" class="form-label">Descrição</label>
+                <input type="text" class="form-control" id="descProd" name="descProd">
+            </div>
+            <div class="col-6">
+                <label for="valorProd" class="form-label">Valor</label>
+                <input type="text" class="form-control" id="valorProd" name="valorProd">
+            </div>
+            <div class="col-12">
+                <label for="figuraProd" class="form-label">Cod Figura</label>
+                <input type="text" class="form-control" id="figuraProd" name="figuraProd">
+            </div>
+        </div>
+        <div class="col">
+        <button type="submit" class="btn btn-outline-primary" name='botao' value='alterar'>Alterar</button>
+        </div>
+        </form>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Fechar</button>
+    </div>
+    </div>
+</div>
+</div>
+<!--modal alterar produto-->
+<!--modal pesquisar cliente-->
+<div class="modal fade" id="pesqCliente" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+    <div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: black">Pesquisar Cliente</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body" style="color: black">
+    <form class="row g-3">
+            <div class="col-12">
+                <label for="inputDesc" class="form-label">Nome do Cliente</label>
+                <input type="text" class="form-control" id="inputDesc">
+            </div>
+            <div class="col">
+            <button type="submit" class="btn btn-outline-primary" data-bs-dismiss="modal">Pesquisar</button>
+            </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Fechar</button>
+    </div>
+    </form>
+    </div>
+</div>
+</div>
+<!--modal pesquisar cliente-->
+<!--modal pesquisar mensagem-->
+<div class="modal fade" id="pesqMens" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+    <div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: black">Pesquisar Mensagens</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+    <div class="modal-body" style="color: black">
+    <form class="row g-3">
+            <div class="col-12">
+                <label for="inputDesc" class="form-label">Código da Mensagem</label>
+                <input type="text" class="form-control" id="inputDesc">
+            </div>
+            <div class="col">
+            <button type="submit" class="btn btn-outline-primary" data-bs-dismiss="modal">Pesquisar</button>
+            </div>
+    </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Fechar</button>
+    </div>
+    </form>
+    </div>
+</div>
+</div>
+<!--modal pesquisar mensagem-->
+<!--excluir mensagem-->
+<div class="modal fade" id="deleteMensagem" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+    <div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: black">Excluir Mensagem</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body" style="color: black">
+        <form action="../gerenciamento/crud/produto/controleproduto.php" method="GET" class="row g-3">
+            <div class="col">
+                <label for="codProd" class="form-label">Cod</label>
+                <input type="text" class="form-control" id="codProd" name="codProd">
+            </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Fechar</button>
+        <button type="submit" class="btn btn-outline-danger" name='botao' value='deletar'>Deletar</button>
+    </div>
+    </form>
+    </div>
+</div>
+</div>
+<!--excluir mensagem-->
+<!--opcoes administrador-->
+<div style="margin-top: 150px;" class="shadow-lg rounded">
+<table class="table">
+<thead>
+    <tr class="table" style="font-size:32px">
+    <th scope="col"><img src="../imgs/iconspage/iconprodutos.png" alt="produtos"></th>
+    <th scope="col"><img src="../imgs/iconspage/iconperson.png" alt="clientes"></th>
+    <th scope="col"><img src="../imgs/iconspage/iconmensagem.png" alt="mensagens"></th>
+    </tr>
+</thead>
+<tbody>
+    <tr class="table">
+    <td>
+    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#addProd">
+    Incluir
+    </button>
+    <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#deleteProd">
+    Excluir
+    </button>
+    
+    </td>
+    <td>
+    <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#pesqCliente">
+    Pesquisar
+    </button>
+    </td>
+    
+    <td>
+    <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#pesqMens">
+    Pesquisar
+    </button>
+    <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#deleteMensagem">
+    Excluir
+    </button>
+    </td>
+    </tr>
+    <tr class="table">
+        <td>
+        <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#pesqProd">
+    Pesquisar
+    </button>
+    <button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#alterarProd">
+    Alterar
+    </button>
+        </td>
+        <td></td>
+        <td></td>
+    </tr>
+</tbody>
+</table>
+</div>
+<!--opcoes administrador-->
+        
+        
+        
     <!--bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">

@@ -9,13 +9,13 @@ figuraProd int NOT NULL
 /*futuramente figura sera blob*/
 CREATE TABLE cliente(
 codCliente INT PRIMARY KEY AUTO_INCREMENT,
-cpf VARCHAR(11) NOT NULL,
-cidade VARCHAR(90) NOT NULL,
-genero TINYINT
+cpfCliente VARCHAR(11) NOT NULL,
+cidadeCliente VARCHAR(90) NOT NULL,
+generoCliente TINYINT
 );
 CREATE TABLE mensagem(
-codMensagem INT PRIMARY KEY AUTO_INCREMENT,
-assunto VARCHAR(90),
-data DATE NOT NULL,
-observação VARCHAR(90) NOT NULL
+codMens INT PRIMARY KEY AUTO_INCREMENT,
+assuntoMens VARCHAR(90),
+obsMens VARCHAR(90) NOT NULL,
+dataMens DATE NOT NULL
 );
