@@ -153,6 +153,51 @@
         </div>
         <!--modal delete produto-->
 
+        <!--modal pesquisar produto-->
+        <div class="modal fade" id="pesqProd" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel" style="color: black">Pesquisar Produtos</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" style="color: black">
+            <form class="row g-3">
+                    <div class="col-12">
+                        <label for="inputDesc" class="form-label">Código do Produto</label>
+                        <input type="text" class="form-control" id="inputDesc">
+                    </div>
+                    <div class="col">
+                    <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Pesquisar</button>
+                    </div>
+            </div>
+            </form>
+
+            <div style="color: black"><?php
+            include ("../gerenciamento/connection/conexao.php");
+            $sql= "SELECT * FROM produto";
+                    $banco = new conexao();
+                    $con = $banco->getConexao();
+                    $res_prod = $con->query($sql);
+                    while($row = $res_prod->fetch()){
+                        echo "<tr>";
+                        echo "<td style='text-align:center;'>Código: ".$row['codProd']."</td><br>";
+                        echo "<td style='text-align:center'>Descrição: ".$row['descProd']."</td><br>";
+                        echo "<td style='text-align:center'>Valor: ".$row['valorProd']."</td><br>";
+                        echo "<td style='text-align:center'>Figura: ".$row['figuraProd']."</td><br>";
+                        
+                        echo "</tr> <hr>";
+                    }
+                    ?></div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            </div>
+            </div>
+        </div>
+        </div>
+        <!--modal pesquisar produto-->
+
         <!--modal pesquisar cliente-->
         <div class="modal fade" id="pesqCliente" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -250,10 +295,18 @@
             </button>
             </td>
             </tr>
+            <tr class="table">
+            <td>
+            <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#pesqProd">
+            Pesquisar
+            </button>
+            </td>
         </tbody>
         </table>
         </div>
         <!--opcoes administrador-->
+
+        
        
     <!--bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
