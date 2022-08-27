@@ -3,7 +3,7 @@
 $codProd = filter_input(INPUT_GET,'codProd');
 $descProd = filter_input(INPUT_GET,'descProd');
 $valorProd = filter_input(INPUT_GET,'valorProd');
-$figuraProd = filter_input(INPUT_GET,'tipoPag');
+$figuraProd = filter_input(INPUT_GET,'figuraProd');
 
 $botao = filter_input(INPUT_GET,'botao');
 
@@ -13,7 +13,7 @@ $produto = new produto();
 $produto->setCodProd($codProd);
 $produto->setDescProd($descProd);
 $produto->setValorProd($valorProd);
-$produto->setQtdeProd($figuraProd);
+$produto->setFiguraProd($figuraProd);
 
 include 'produtoDao.php';
 $produtoDao = new produtoDao();

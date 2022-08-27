@@ -104,25 +104,30 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body" style="color: black">
-                <form action="../gerenciamento/crud\/produto/controleproduto.php" method="GET" class="row g-3">
+                <form action="../gerenciamento/crud/produto/controleproduto.php" method="GET" class="row g-3">
                     <div class="col-6">
-                        <label for="inputDesc" class="form-label">Descrição</label>
-                        <input type="text" class="form-control" id="inputDesc">
+                        <label for="codProd" class="form-label">Cod</label>
+                        <input type="text" class="form-control" id="codProd" name="codProd">
                     </div>
                     <div class="col-6">
-                        <label for="inputValor" class="form-label">Valor</label>
-                        <input type="text" class="form-control" id="inputValor">
+                        <label for="descProd" class="form-label">Descrição</label>
+                        <input type="text" class="form-control" id="descProd" name="descProd">
+                    </div>
+                    <div class="col-6">
+                        <label for="valorProd" class="form-label">Valor</label>
+                        <input type="text" class="form-control" id="valorProd" name="valorProd">
                     </div>
                     <div class="col-12">
-                        <label for="inputFigura" class="form-label">Cod Figura</label>
-                        <input type="text" class="form-control" id="inputFigura">
+                        <label for="figuraProd" class="form-label">Cod Figura</label>
+                        <input type="text" class="form-control" id="figuraProd" name="figuraProd">
                     </div>
-                </form>
+                
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
                 <button type="submit" class="btn btn-primary" name='botao' value='add'>Adicionar</button>
             </div>
+            </form>
             </div>
         </div>
         </div>
@@ -145,11 +150,11 @@
                     <div class="col">
                     <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Pesquisar</button>
                     </div>
-                </form>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
             </div>
+            </form>
             </div>
         </div>
         </div>
@@ -173,12 +178,12 @@
                     <div class="col">
                     <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Pesquisar</button>
                     </div>
-                </form>
             </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
             </div>
+            </form>
             </div>
         </div>
         </div>

@@ -4,8 +4,9 @@ CREATE TABLE produto(
 codProd INT PRIMARY KEY AUTO_INCREMENT,
 descProd VARCHAR(90) NOT NULL,
 valorProd DECIMAL(5,2) NOT NULL,
-figura blob NOT NULL
+figuraProd int NOT NULL
 );
+/*futuramente figura sera blob*/
 CREATE TABLE cliente(
 codCliente INT PRIMARY KEY AUTO_INCREMENT,
 cpf VARCHAR(11) NOT NULL,

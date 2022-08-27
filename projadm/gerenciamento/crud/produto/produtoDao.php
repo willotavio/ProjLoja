@@ -1,6 +1,6 @@
 <?php
 
-include '../connection/conexao.php';
+include '../../connection/conexao.php';
 
 class produtoDao{
 
@@ -11,7 +11,7 @@ class produtoDao{
         $con = $banco->getConexao();
         $res = $con->prepare($sql);
         $res->bindValue(1,$p->getCodProd());
-        $res->bindValue(2,$p->getdescProd());
+        $res->bindValue(2,$p->getDescProd());
         $res->bindValue(3,$p->getValorProd());
         $res->bindValue(4,$p->getFiguraProd());
 
@@ -20,7 +20,7 @@ class produtoDao{
         if($final){
             echo "<script LANGUAGE='JavaScript'>
             window.alert('Adicionado com sucesso!');
-            window.location.href='../index.php'
+            window.location.href='../../../pages/indexadm.php'
             </script>";
         }else{
             echo 'deu ruim';

@@ -29,7 +29,7 @@
 
     
     public function getfiguraProd(){
-        return $this->qtdeProd;
+        return $this->figuraProd;
     }
     public function setfiguraProd($fp){
         $this->figuraProd = $fp;
