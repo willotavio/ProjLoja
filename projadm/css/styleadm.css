@@ -76,4 +76,10 @@ th{
 tr{
     background-color: rgb(55, 115, 128);
 }
+img{
+    width: 100px;
+}
+#logo{
+    width: 60px;
+}
 /*gerenciamento*/

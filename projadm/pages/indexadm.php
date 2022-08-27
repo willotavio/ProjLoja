@@ -27,7 +27,7 @@
 <header id="header" style="margin-bottom: 100px;">
     <nav class="navbar navbar-expand-lg" style="position: fixed;z-index: 1000;width: 100%;">
         <div class="container-fluid">
-            <a class="navbar-brand" href=""><img src="../imgs/logo.png" width="60px"></a>
+            <a class="navbar-brand" href=""><img src="../imgs/logo.png" id="logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -35,9 +35,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link " href="" style="color:white">VOLTAR AO SITE</a>
-                    </li>
+                    
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false" style="color:white">
@@ -45,12 +43,12 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown"
                             style=" background-color: rgb(40, 90, 100);">
-                            <li><a class="dropdown-item" href="projadm/pages/perfil.php" style="color:white">VER PERFIL</a>
+                            <li><a class="dropdown-item" href="" style="color:white">INCLUIR</a>
                             </li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="" style="color:white">SAIR</a>
+                            <li><a class="dropdown-item" href="" style="color:white">EXCLUIR</a>
                             </li>
                             </ul>
                         </li>
@@ -61,15 +59,12 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown"
                             style=" background-color: rgb(40, 90, 100);">
-                            <li><a class="dropdown-item" href="projadm/pages/perfil.php" style="color:white">VER PERFIL</a>
+                            <li><a class="dropdown-item" href="" style="color:white">PESQUISAR</a>
                             </li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="" style="color:white">SAIR</a>
-                            </li>
-                            </ul>
-                        </li>
+                        </ul>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false" style="color:white">
@@ -77,12 +72,12 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown"
                             style=" background-color: rgb(40, 90, 100);">
-                            <li><a class="dropdown-item" href="projadm/pages/perfil.php" style="color:white">VER PERFIL</a>
+                            <li><a class="dropdown-item" href="" style="color:white">PESQUISAR</a>
                             </li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="" style="color:white">SAIR</a>
+                            <li><a class="dropdown-item" href="" style="color:white">EXCLUIR</a>
                             </li>
                             </ul>
                         </li>
@@ -219,9 +214,9 @@
         <table class="table">
         <thead>
             <tr class="table" style="font-size:32px">
-            <th scope="col">Produtos</th>
-            <th scope="col">Clientes</th>
-            <th scope="col">Mensagens</th>
+            <th scope="col"><img src="../imgs/iconspage/iconprodutos.png" alt="produtos"></th>
+            <th scope="col"><img src="../imgs/iconspage/iconperson.png" alt="clientes"></th>
+            <th scope="col"><img src="../imgs/iconspage/iconmensagem.png" alt="mensagens"></th>
             </tr>
         </thead>
         <tbody>
