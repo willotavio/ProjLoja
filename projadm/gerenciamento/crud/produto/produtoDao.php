@@ -49,6 +49,7 @@ class produtoDao{
         else{
             echo "deu ruim";
         }
+        $con->close();
     }
 
     public function deletarProd($codProd){

@@ -100,27 +100,27 @@
             </div>
             <div class="modal-body" style="color: black">
                 <form action="../gerenciamento/crud/produto/controleproduto.php" method="GET" class="row g-3">
-                    <div class="col-6">
+                    <div class="col-md-6">
                         <label for="codProd" class="form-label">Cod</label>
                         <input type="text" class="form-control" id="codProd" name="codProd">
                     </div>
-                    <div class="col-6">
+                    <div class="col-md-6">
                         <label for="descProd" class="form-label">Descrição</label>
                         <input type="text" class="form-control" id="descProd" name="descProd">
                     </div>
-                    <div class="col-6">
+                    <div class="col-md-6">
                         <label for="valorProd" class="form-label">Valor</label>
                         <input type="text" class="form-control" id="valorProd" name="valorProd">
                     </div>
-                    <div class="col-12">
+                    <div class="col-md-6">
                         <label for="figuraProd" class="form-label">Cod Figura</label>
                         <input type="text" class="form-control" id="figuraProd" name="figuraProd">
                     </div>
                 
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                <button type="submit" class="btn btn-primary" name='botao' value='add'>Adicionar</button>
+                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Fechar</button>
+                <button type="submit" class="btn btn-outline-primary" name='botao' value='add'>Adicionar</button>
             </div>
             </form>
             </div>
@@ -138,14 +138,14 @@
             </div>
             <div class="modal-body" style="color: black">
                 <form action="../gerenciamento/crud/produto/controleproduto.php" method="GET" class="row g-3">
-                    <div class="col-6">
+                    <div class="col">
                         <label for="codProd" class="form-label">Cod</label>
                         <input type="text" class="form-control" id="codProd" name="codProd">
                     </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                <button type="submit" class="btn btn-danger" name='botao' value='deletar'>Deletar</button>
+                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Fechar</button>
+                <button type="submit" class="btn btn-outline-danger" name='botao' value='deletar'>Deletar</button>
             </div>
             </form>
             </div>
@@ -168,7 +168,7 @@
                         <input type="text" class="form-control" id="inputDesc">
                     </div>
                     <div class="col">
-                    <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Pesquisar</button>
+                    <button type="submit" class="btn btn-outline-primary" data-bs-dismiss="modal">Pesquisar</button>
                     </div>
             </div>
             </form>
@@ -191,7 +191,7 @@
                     ?></div>
 
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Fechar</button>
             </div>
             </div>
         </div>
@@ -225,11 +225,12 @@
                         <input type="text" class="form-control" id="figuraProd" name="figuraProd">
                     </div>
                 </div>
-                
-                <button type="submit" class="btn btn-primary" name='botao' value='alterar'>Alterar</button>
+                <div class="col">
+                <button type="submit" class="btn btn-outline-primary" name='botao' value='alterar'>Alterar</button>
+                </div>
                 </form>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Fechar</button>
             </div>
             </div>
         </div>
@@ -251,11 +252,11 @@
                         <input type="text" class="form-control" id="inputDesc">
                     </div>
                     <div class="col">
-                    <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Pesquisar</button>
+                    <button type="submit" class="btn btn-outline-primary" data-bs-dismiss="modal">Pesquisar</button>
                     </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Fechar</button>
             </div>
             </form>
             </div>
@@ -279,12 +280,12 @@
                         <input type="text" class="form-control" id="inputDesc">
                     </div>
                     <div class="col">
-                    <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Pesquisar</button>
+                    <button type="submit" class="btn btn-outline-primary" data-bs-dismiss="modal">Pesquisar</button>
                     </div>
             </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Fechar</button>
             </div>
             </form>
             </div>
@@ -293,7 +294,7 @@
         <!--modal pesquisar mensagem-->
 
         <!--opcoes administrador-->
-        <div style="padding-top: 170px;">
+        <div style="margin-top: 150px;" class="shadow-lg rounded">
         <table class="table">
         <thead>
             <tr class="table" style="font-size:32px">
@@ -305,47 +306,42 @@
         <tbody>
             <tr class="table">
             <td>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addProd">
+            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#addProd">
             Incluir
             </button>
-            </td>
-            <td>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pesqCliente">
-            Pesquisar
-            </button>
-            </td>
-            <td>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pesqMens">
-            Pesquisar
-            </button>
-            </td>
-            </tr>
-            <tr class="table">
-            <td>
-            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteProd">
+            <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#deleteProd">
             Excluir
             </button>
+            
             </td>
-            <td></td>
+
             <td>
-            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#pesqCliente">
+            Pesquisar
+            </button>
+            </td>
+            
+            <td>
+            <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#pesqMens">
+            Pesquisar
+            </button>
+            <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
             Excluir
             </button>
             </td>
             </tr>
+
             <tr class="table">
-            <td>
-            <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#pesqProd">
+                <td>
+                <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#pesqProd">
             Pesquisar
             </button>
-            </td>
-            </tr>
-            <tr>
-            <td>
-            <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#alterarProd">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#alterarProd">
             Alterar
             </button>
-            </td>
+                </td>
+                <td></td>
+                <td></td>
             </tr>
         </tbody>
         </table>
