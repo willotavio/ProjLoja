@@ -20,7 +20,7 @@ class mensagemDao{
         if($final){
             echo "<script LANGUAGE='JavaScript'>
             window.alert('Adicionado com sucesso!');
-            window.location.href='../../../pages/indexadm.php'
+            window.location.href='../../../../'
             </script>";
         }else{
             echo 'deu ruim';

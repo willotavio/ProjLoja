@@ -27,7 +27,7 @@
 <header id="header" style="margin-bottom: 100px;">
     <nav class="navbar navbar-expand-lg" style="position: fixed;z-index: 1000;width: 100%;">
         <div class="container-fluid">
-            <a class="navbar-brand" href=""><img src="../imgs/logo.png" id="logo"></a>
+            <a class="navbar-brand" href="../../"><img src="../imgs/logo.png" id="logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">

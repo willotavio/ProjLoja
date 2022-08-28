@@ -85,7 +85,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body" style="color: black">
-                <form action="projadm/gerenciamento/crud/mensagens/controleMensagem.php" method="GET" class="row g-3">
+                <form action="projadm/gerenciamento/crud/mensagem/controleMensagem.php" method="GET" class="row g-3">
                     <div class="col-6">
                         <label for="codMens" class="form-label">Cod Mensagem</label>
                         <input type="number" class="form-control" id="codMens" name="codMens">
