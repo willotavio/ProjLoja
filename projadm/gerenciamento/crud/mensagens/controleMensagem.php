@@ -8,22 +8,22 @@ $dataMens = filter_input(INPUT_GET,'dataMens');
 $botao = filter_input(INPUT_GET,'botao');
 
 include 'mensagem.php';
-$produto = new produto();
+$mensagem = new mensagem();
 
-$produto->setcodMens($codMens);
-$produto->setassuntoMens($assuntoMens);
-$produto->setobsMens($obsMens);
-$produto->setdataMens($dataMens);
+$mensagem->setcodMens($codMens);
+$mensagem->setassuntoMens($assuntoMens);
+$mensagem->setobsMens($obsMens);
+$mensagem->setdataMens($dataMens);
 
 include 'mensagemDao.php';
-$produtoDao = new produtoDao();
+$mensagemDao = new mensagemDao();
 
 if($botao=='add'){
-    $mensagemDao->cadastrarMens($produto);
+    $mensagemDao->cadastrarMens($mensagem);
 }else if($botao=='alterar'){
-    $mensagemDao->atualizarMens($produto);
+    $mensagemDao->atualizarMens($mensagem);
 }else if($botao=='deletar'){
-    $mensagemDao->deletarMens($codProd);
+    $mensagemDao->deletarMens($codMens);
 }else if($botao=='consultar'){
     ?>
         <style>

@@ -4,16 +4,16 @@ include '../../connection/conexao.php';
 
 class mensagemDao{
 
-    public function cadastrarMensagem(Mensagem $m){
+    public function cadastrarMens(Mensagem $m){
         $sql = 'insert into mensagem (codMens,assuntoMens,obsMens,dataMens) values(?,?,?,?)';
         
         $banco = new conexao();
         $con = $banco->getConexao();
         $res = $con->prepare($sql);
-        $res->bindValue(1,$p->getcodMens());
-        $res->bindValue(2,$p->getassuntoMens());
-        $res->bindValue(3,$p->getobsMens());
-        $res->bindValue(4,$p->getdataMens());
+        $res->bindValue(1,$m->getcodMens());
+        $res->bindValue(2,$m->getassuntoMens());
+        $res->bindValue(3,$m->getobsMens());
+        $res->bindValue(4,$m->getdataMens());
 
         $final = $res->execute();
 

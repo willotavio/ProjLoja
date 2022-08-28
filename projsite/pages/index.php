@@ -76,7 +76,6 @@
     <!--navbar-->
 
 <body>
-
     <!--modal fale conosco-->
     <div class="modal fade" id="faleConosco" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -86,22 +85,22 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body" style="color: black">
-                <form action="" method="GET" class="row g-3">
+                <form action="projadm/gerenciamento/crud/mensagens/controleMensagem.php" method="GET" class="row g-3">
                     <div class="col-6">
-                        <label for="codMensagem" class="form-label">Cod Mensagem</label>
-                        <input type="number" class="form-control" id="codMensagem" name="codMensagem">
+                        <label for="codMens" class="form-label">Cod Mensagem</label>
+                        <input type="number" class="form-control" id="codMens" name="codMens">
                     </div>
                     <div class="col-6">
-                        <label for="assunto" class="form-label">Assunto</label>
-                        <input type="text" class="form-control" id="assunto" name="assunto">
+                        <label for="assuntoMens" class="form-label">Assunto</label>
+                        <input type="text" class="form-control" id="assuntoMens" name="assuntoMens">
                     </div>
                     <div class="col-6">
-                        <label for="observação" class="form-label">Observação</label>
-                        <input type="text" class="form-control" id="observação" name="observação">
+                        <label for="obsMens" class="form-label">Observação</label>
+                        <input type="text" class="form-control" id="obsMens" name="obsMens">
                     </div>
                     <div class="col-6">
-                        <label for="data" class="form-label">Data</label>
-                        <input type="date" class="form-control" id="data" name="data">
+                        <label for="dataMens" class="form-label">Data</label>
+                        <input type="date" class="form-control" id="dataMens" name="dataMens">
                     </div>
                 
             </div>
@@ -112,9 +111,9 @@
             </form>
             </div>
         </div>
-        </div>
-        <!--modal fale conosco-->
-        <div>
+    </div>
+    <!--modal fale conosco-->
+    <div>
 
         <div id="carouselExampleIndicators" class="carousel slide shadow-lg" data-bs-ride="true">
   <div class="carousel-indicators">
