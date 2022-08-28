@@ -171,7 +171,7 @@
     </div>
     </form>
     <div style="color: black"><?php
-    include ("../gerenciamento/connection/conexao.php");
+    include_once("../gerenciamento/connection/conexao.php");
     $sql= "SELECT * FROM produto";
             $banco = new conexao();
             $con = $banco->getConexao();
@@ -277,10 +277,29 @@
             </div>
     </div>
     </div>
+    </form>
+
+    <div style="color: black"><?php
+    include_once("../gerenciamento/connection/conexao.php");
+    $sql= "SELECT * FROM mensagem";
+            $banco = new conexao();
+            $con = $banco->getConexao();
+            $res_mens = $con->query($sql);
+            while($row = $res_mens->fetch()){
+                echo "<tr>";
+                echo "<td style='text-align:center;'>Código: ".$row['codMens']."</td><br>";
+                echo "<td style='text-align:center'>Descrição: ".$row['assuntoMens']."</td><br>";
+                echo "<td style='text-align:center'>Valor: ".$row['obsMens']."</td><br>";
+                echo "<td style='text-align:center'>Figura: ".$row['dataMens']."</td><br>";
+                
+                echo "</tr> <hr>";
+            }
+            ?></div>
+
     <div class="modal-footer">
         <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Fechar</button>
     </div>
-    </form>
+    
     </div>
 </div>
 </div>
@@ -294,10 +313,10 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
     </div>
     <div class="modal-body" style="color: black">
-        <form action="../gerenciamento/crud/produto/controleproduto.php" method="GET" class="row g-3">
+        <form action="../gerenciamento/crud/mensagem/controleMensagem.php" method="GET" class="row g-3">
             <div class="col">
-                <label for="codProd" class="form-label">Cod</label>
-                <input type="text" class="form-control" id="codProd" name="codProd">
+                <label for="codMens" class="form-label">Cod</label>
+                <input type="text" class="form-control" id="codMens" name="codMens">
             </div>
     </div>
     <div class="modal-footer">

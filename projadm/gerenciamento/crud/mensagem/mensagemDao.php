@@ -28,7 +28,7 @@ class mensagemDao{
     }
 
     public function deletarMens($codMens){
-        $sql = 'delete from produto where codMens=?';
+        $sql = 'delete from mensagem where codMens=?';
 
         $banco = new conexao();
         $con = $banco->getConexao();
