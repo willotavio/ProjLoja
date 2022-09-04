@@ -170,7 +170,8 @@
             </div>
     </div>
     </form>
-    <div style="color: black"><?php
+    <div style="color: black">
+    <?php
     include_once("../gerenciamento/connection/conexao.php");
     $sql= "SELECT * FROM produto";
             $banco = new conexao();
@@ -185,7 +186,8 @@
                 
                 echo "</tr> <hr>";
             }
-            ?></div>
+    ?>
+    </div>
     <div class="modal-footer">
         <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Fechar</button>
     </div>
@@ -249,6 +251,27 @@
             <button type="submit" class="btn btn-outline-primary" data-bs-dismiss="modal">Pesquisar</button>
             </div>
     </div>
+
+    <div style="color: black">
+        <?php
+            include_once("../gerenciamento/connection/conexao.php");
+            $sql= "SELECT * FROM cliente";
+            $banco = new conexao();
+            $con = $banco->getConexao();
+            $res_prod = $con->query($sql);
+            while($row = $res_prod->fetch()){
+                echo "<tr>";
+                echo "<td style='text-align:center;'>Código: ".$row['codCliente']."</td><br>";
+                echo "<td style='text-align:center;'>Nome: ".$row['nomeCliente']."</td><br>";     
+                echo "<td style='text-align:center'>CPF: ".$row['cpfCliente']."</td><br>";
+                echo "<td style='text-align:center'>Cidade: ".$row['cidadeCliente']."</td><br>";
+                echo "<td style='text-align:center'>Gênero: ".$row['generoCliente']."</td><br>";
+                
+                echo "</tr> <hr>";
+            }
+        ?>
+        </div>
+
     <div class="modal-footer">
         <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Fechar</button>
     </div>
@@ -257,6 +280,30 @@
 </div>
 </div>
 <!--modal pesquisar cliente-->
+<!--modal excluir cliente-->
+<div class="modal fade" id="excluirCliente" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+    <div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: black">Excluir Cliente</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body" style="color: black">
+        <form action="../gerenciamento/crud/cliente/controlecliente.php" method="GET" class="row g-3">
+            <div class="col">
+                <label for="codCliente" class="form-label">Cod</label>
+                <input type="text" class="form-control" id="codCliente" name="codCliente">
+            </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Fechar</button>
+        <button type="submit" class="btn btn-outline-danger" name='botao' value='deletar'>Deletar</button>
+    </div>
+    </form>
+    </div>
+</div>
+</div>
+<!--modal excluir cliente-->
 <!--modal pesquisar mensagem-->
 <div class="modal fade" id="pesqMens" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 <div class="modal-dialog">
@@ -279,7 +326,8 @@
     </div>
     </form>
 
-    <div style="color: black"><?php
+    <div style="color: black">
+    <?php
     include_once("../gerenciamento/connection/conexao.php");
     $sql= "SELECT * FROM mensagem";
             $banco = new conexao();
@@ -294,12 +342,11 @@
                 
                 echo "</tr> <hr>";
             }
-            ?></div>
-
+    ?>
+    </div>
     <div class="modal-footer">
         <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Fechar</button>
     </div>
-    
     </div>
 </div>
 </div>
@@ -333,9 +380,9 @@
 <table class="table">
 <thead>
     <tr class="table" style="font-size:32px">
-    <th scope="col"><img src="../imgs/iconspage/iconprodutos.png" alt="produtos"></th>
-    <th scope="col"><img src="../imgs/iconspage/iconperson.png" alt="clientes"></th>
-    <th scope="col"><img src="../imgs/iconspage/iconmensagem.png" alt="mensagens"></th>
+    <th scope="col"><img src="../imgs/iconspage/iconprodutos.png" alt="produtos" title='produtos'></th>
+    <th scope="col"><img src="../imgs/iconspage/iconperson.png" alt="clientes" title='clientes'></th>
+    <th scope="col"><img src="../imgs/iconspage/iconmensagem.png" alt="mensagens" title='mensagens'></th>
     </tr>
 </thead>
 <tbody>
@@ -352,6 +399,9 @@
     <td>
     <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#pesqCliente">
     Pesquisar
+    </button>
+    <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#excluirCliente">
+    Excluir
     </button>
     </td>
     

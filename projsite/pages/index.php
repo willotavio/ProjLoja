@@ -146,39 +146,68 @@
 </div>
          
     <div class="container text-dark" style="margin-top:25px">
-        <div class="row">
-            <div class="col sm-4">
-            <div class="card" style="width: 18rem;margin: auto">
-            <img src="projsite/imgs/prod/1.jpg" class="card-img-top" alt="produto 1" title="produto 1">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-info text-white">Comprar</a>
-            </div>
-            </div>
-            </div>
+    <?php
+    include_once("../../projadm/gerenciamento/connection/conexao.php");
+    include_once("../../projadm/gerenciamento/crud/produto/produto.php");
+    $sql= "SELECT * FROM produto WHERE codProd = 1";
+            $banco = new conexao();
+            $con = $banco->getConexao();
+            $res_prod = $con->query($sql);
+            while($row = $res_prod->fetch()){
+                ?><div class="row">
+                <div class="col sm-4">
+                <div class="card" style="width: 18rem;margin: auto">
+                <img src="projsite/imgs/prod/1.jpg" class="card-img-top" alt="produto 1" title="produto 1">
+                <div class="card-body">
+                    <h5 class="card-title"><?php echo $row['descProd'];?></h5>
+                    <p class="card-text"><?php echo $row['descProd'];?></p>
+                    <a href="#" class="btn btn-info text-white">Comprar</a>
+                </div>
+                </div>
+                </div><?php
+            }
+            ?>
+        
         
         <div class="col sm-4">
+        <?php
+    $sql= "SELECT * FROM produto WHERE codProd = 2"; 
+            $banco = new conexao();
+            $con = $banco->getConexao();
+            $res_prod = $con->query($sql);
+            while($row = $res_prod->fetch()){
+                ?>
             <div class="card" style="width: 18rem;margin: auto">
             <img src="projsite/imgs/prod/1.jpg" class="card-img-top" alt="produto 2" title="produto 2">
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="card-title"><?php echo $row['descProd'];?></h5>
+                <p class="card-text"><?php echo $row['descProd'];?></p>
                 <a href="#" class="btn btn-info text-white">Comprar</a>
             </div>
             </div>
-            </div>
-        
+            </div><?php
+            }
+        ?>
+
         <div class="col sm-4">
+        <?php
+    $sql= "SELECT * FROM produto WHERE codProd = 3"; 
+            $banco = new conexao();
+            $con = $banco->getConexao();
+            $res_prod = $con->query($sql);
+            while($row = $res_prod->fetch()){
+                ?>
             <div class="card" style="width: 18rem;margin: auto">
-            <img src="projsite/imgs/prod/1.jpg" class="card-img-top" alt="produto 3" title="produto 3">
+            <img src="projsite/imgs/prod/1.jpg" class="card-img-top" alt="produto 2" title="produto 2">
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="card-title"><?php echo $row['descProd'];?></h5>
+                <p class="card-text"><?php echo $row['descProd'];?></p>
                 <a href="#" class="btn btn-info text-white">Comprar</a>
             </div>
             </div>
-            </div>
+            </div><?php
+            }
+        ?>
         </div>
     </div>
 

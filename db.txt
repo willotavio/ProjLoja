@@ -9,9 +9,10 @@ figuraProd int NOT NULL
 /*futuramente figura sera blob*/
 CREATE TABLE cliente(
 codCliente INT PRIMARY KEY AUTO_INCREMENT,
+nomeCliente VARCHAR(90) NOT NULL,
 cpfCliente VARCHAR(11) NOT NULL,
 cidadeCliente VARCHAR(90) NOT NULL,
-generoCliente TINYINT
+generoCliente TINYINT NOT NULL
 );
 CREATE TABLE mensagem(
 codMens INT PRIMARY KEY AUTO_INCREMENT,
