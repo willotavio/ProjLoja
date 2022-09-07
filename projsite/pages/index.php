@@ -149,7 +149,7 @@
     <?php
     include_once("../../projadm/gerenciamento/connection/conexao.php");
     include_once("../../projadm/gerenciamento/crud/produto/produto.php");
-    $sql= "SELECT * FROM produto WHERE codProd = 1";
+    $sql= "SELECT * FROM produto order by rand() limit 1";
             $banco = new conexao();
             $con = $banco->getConexao();
             $res_prod = $con->query($sql);
@@ -171,7 +171,7 @@
         
         <div class="col sm-4">
         <?php
-    $sql= "SELECT * FROM produto WHERE codProd = 2"; 
+    $sql= "SELECT * FROM produto order by rand() limit 1"; 
             $banco = new conexao();
             $con = $banco->getConexao();
             $res_prod = $con->query($sql);
@@ -191,7 +191,7 @@
 
         <div class="col sm-4">
         <?php
-    $sql= "SELECT * FROM produto WHERE codProd = 3"; 
+    $sql= "SELECT * FROM produto order by rand() limit 1"; 
             $banco = new conexao();
             $con = $banco->getConexao();
             $res_prod = $con->query($sql);
