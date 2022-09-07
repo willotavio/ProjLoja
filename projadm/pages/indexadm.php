@@ -380,9 +380,9 @@
 <table class="table">
 <thead>
     <tr class="table" style="font-size:32px">
-    <th scope="col"><img src="../imgs/iconspage/iconprodutos.png" alt="produtos" title='produtos'></th>
-    <th scope="col"><img src="../imgs/iconspage/iconperson.png" alt="clientes" title='clientes'></th>
-    <th scope="col"><img src="../imgs/iconspage/iconmensagem.png" alt="mensagens" title='mensagens'></th>
+    <th scope="col"><img src="..\imgs\iconspage\iconmercadorias.png" alt="produtos" title='produtos'></th>
+    <th scope="col"><img src="../imgs/iconspage/iconclientes.png" alt="clientes" title='clientes'></th>
+    <th scope="col"><img src="..\imgs\iconspage\iconmensagens.png" alt="mensagens" title='mensagens'></th>
     </tr>
 </thead>
 <tbody>

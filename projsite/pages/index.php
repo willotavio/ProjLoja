@@ -159,7 +159,7 @@
                 <div class="card" style="width: 18rem;margin: auto">
                 <img src="projsite/imgs/prod/1.jpg" class="card-img-top" alt="produto 1" title="produto 1">
                 <div class="card-body">
-                    <h5 class="card-title"><?php echo $row['descProd'];?></h5>
+                    <h5 class="card-title"><?php echo $row['nomeProd'];?></h5>
                     <p class="card-text"><?php echo $row['descProd'];?></p>
                     <a href="#" class="btn btn-info text-white">Comprar</a>
                 </div>
@@ -180,7 +180,7 @@
             <div class="card" style="width: 18rem;margin: auto">
             <img src="projsite/imgs/prod/1.jpg" class="card-img-top" alt="produto 2" title="produto 2">
             <div class="card-body">
-                <h5 class="card-title"><?php echo $row['descProd'];?></h5>
+                <h5 class="card-title"><?php echo $row['nomeProd'];?></h5>
                 <p class="card-text"><?php echo $row['descProd'];?></p>
                 <a href="#" class="btn btn-info text-white">Comprar</a>
             </div>
@@ -200,7 +200,7 @@
             <div class="card" style="width: 18rem;margin: auto">
             <img src="projsite/imgs/prod/1.jpg" class="card-img-top" alt="produto 2" title="produto 2">
             <div class="card-body">
-                <h5 class="card-title"><?php echo $row['descProd'];?></h5>
+                <h5 class="card-title"><?php echo $row['nomeProd'];?></h5>
                 <p class="card-text"><?php echo $row['descProd'];?></p>
                 <a href="#" class="btn btn-info text-white">Comprar</a>
             </div>
