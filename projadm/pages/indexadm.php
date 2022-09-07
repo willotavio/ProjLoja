@@ -101,8 +101,8 @@
     <div class="modal-body" style="color: black">
         <form action="../gerenciamento/crud/produto/controleproduto.php" method="GET" class="row g-3">
             <div class="col-md-6">
-                <label for="codProd" class="form-label">Cod</label>
-                <input type="text" class="form-control" id="codProd" name="codProd">
+                <label for="nomeProd" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="nomeProd" name="nomeProd">
             </div>
             <div class="col-md-6">
                 <label for="descProd" class="form-label">Descrição</label>

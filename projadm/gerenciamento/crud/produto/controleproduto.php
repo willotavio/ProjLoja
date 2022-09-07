@@ -1,6 +1,7 @@
 <?php
 
 $codProd = filter_input(INPUT_GET,'codProd');
+$nomeProd = filter_input(INPUT_GET,'nomeProd');
 $descProd = filter_input(INPUT_GET,'descProd');
 $valorProd = filter_input(INPUT_GET,'valorProd');
 $figuraProd = filter_input(INPUT_GET,'figuraProd');
@@ -11,6 +12,7 @@ include 'produto.php';
 $produto = new produto();
 
 $produto->setCodProd($codProd);
+$produto->setNomeProd($nomeProd);
 $produto->setDescProd($descProd);
 $produto->setValorProd($valorProd);
 $produto->setFiguraProd($figuraProd);

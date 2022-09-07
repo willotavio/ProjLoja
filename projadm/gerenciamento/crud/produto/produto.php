@@ -2,7 +2,7 @@
 
     class produto{
 
-    public $codProd, $descProd, $valorProd, $figuraProd;
+    public $codProd, $nomeProd, $descProd, $valorProd, $figuraProd;
 
     public function getcodProd(){
         return $this->codProd;
@@ -11,6 +11,12 @@
         $this->codProd = $cp;
     }
     
+    public function getnomeProd(){
+        return $this->nomeProd;
+    }
+    public function setnomeProd($np){
+        $this->nomeProd = $np;
+    }
 
     public function getdescProd(){
         return $this->descProd;

@@ -5,12 +5,12 @@ include '../../connection/conexao.php';
 class produtoDao{
 
     public function cadastrarProd(Produto $p){
-        $sql = 'insert into produto (codProd,descProd,valorProd,figuraProd) values(?,?,?,?)';
+        $sql = 'insert into produto (nomeProd,descProd,valorProd,figuraProd) values(?,?,?,?)';
         
         $banco = new conexao();
         $con = $banco->getConexao();
         $res = $con->prepare($sql);
-        $res->bindValue(1,$p->getCodProd());
+        $res->bindValue(1,$p->getNomeProd());
         $res->bindValue(2,$p->getDescProd());
         $res->bindValue(3,$p->getValorProd());
         $res->bindValue(4,$p->getFiguraProd());
@@ -28,15 +28,16 @@ class produtoDao{
     }
 
     public function atualizarProd(Produto $p){
-        $sql = 'update produto set descProd=?, valorProd=?, figuraProd=? where codProd=?';
+        $sql = 'update produto set nomeProd=?, descProd=?, valorProd=?, figuraProd=? where codProd=?';
 
         $banco = new conexao();
         $con = $banco->getConexao();
         $res = $con->prepare($sql);
-        $res->bindValue(4,$p->getCodProd());
-        $res->bindValue(1,$p->getDescProd());
-        $res->bindValue(2,$p->getValorProd());
-        $res->bindValue(3,$p->getFiguraProd());
+        $res->bindValue(5,$p->getCodProd());
+        $res->bindValue(1,$p->getNomeProd());
+        $res->bindValue(2,$p->getDescProd());
+        $res->bindValue(3,$p->getValorProd());
+        $res->bindValue(4,$p->getFiguraProd());
 
         $final = $res->execute();
 
